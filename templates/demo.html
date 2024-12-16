@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="container mx-auto pb-6 pt-4 p-6 mt-4 mb-8 pb-4 bg-white rounded fade-in" style="max-width: 968px;">
+    <h1 class="text-xl font-bold mb-2">Demo</h1>
+    <!-- Content Area -->
+    <div class="w-full bg-gray-100 rounded-lg mt-4">
+        <section class="container mx-auto flex items-center flex-row justify-center mt-4">
+            <div class="flex flex-col mt-2 items-center">
+                <h2 class="text-xl mb-2 mt-4"></h2>
+                <form id="upload-form" 
+                    enctype="multipart/form-data" 
+                    class="mb-4 mt-2 flex flex-col items-center" 
+                    style="width: 500px; height: 500px">
+                    <div id="dropzone" 
+                        class="flex flex-col items-center justify-center w-full h-full border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
+                        <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                            <svg class="w-8 h-8 mb-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                            </svg>
+                            <p class="mb-2 text-sm text-gray-500"><span class="font-semibold">Click to upload</span> or drag and drop a .dcm file</p>
+                        </div>
+                        <!-- Hidden file input, placed outside of label -->
+                        <input id="dropzone-file" name="file" type="file" class="hidden" />
+                    </div>
+                </form>
+
+                <div class="flex space-x-4 my-4">
+                    <canvas id="canvas-original" width="400" height="400" class="rounded hidden"></canvas>
+                    <canvas id="canvas-prediction" width="400" height="400" class="rounded hidden"></canvas>
+                </div>
+                
+                <!-- Reupload button is hidden initially -->
+                <button type="button" id="reupload-button" class="bg-gray-500 hover:bg-gray-600 rounded text-white py-2 px-4 my-2 hidden">Reupload</button>
+            </div>
+        </section>
+        <div id="data-table" class="mt-4 mx-4 pb-4 hidden"></div>
+        <script src="{{ url_for('static', filename='js/demo.js') }}"></script>
+    </div>
+</section>
+
+{% include "modals/loading-modal.html" %}
+
+{% endblock %}

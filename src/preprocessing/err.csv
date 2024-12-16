@@ -1,0 +1,2 @@
+patient_id,error_message
+LIDC-IDRI-0199,"The number of bytes of pixel data is less than expected (300716 vs 524288 bytes) - the dataset may be corrupted, have an invalid group 0028 element value, or the transfer syntax may be incorrect"

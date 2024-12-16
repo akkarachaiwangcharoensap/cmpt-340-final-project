@@ -1,0 +1,99 @@
+<section class="pb-12 px-6 fade-in">
+    <h1 class="text-2xl font-bold text-center pt-10">
+        Before Machine Learning (ML) and Computer Vision (CV)
+    </h1>
+
+    <div class="flex justify-center gap-8 mx-auto mt-10 mb-10">
+        <div class="relative">
+            <img 
+                class="w-96 h-auto bg-white p-2 lazy-loading"
+                style="border-radius: 24px"
+                src="{{ url_for('static', filename='image/skin-biopsy.jpg') }}" 
+                alt="Skin Biopsy Illustration"
+                loading="lazy"
+            >
+            <a 
+                href="https://thumbayuniversityhospital.com/skin-biopsies-what-to-expect/" 
+                class="bottom-3 right-2 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                <u>Source</u>
+            </a>
+        </div>
+        
+        <div class="relative">
+            <img 
+                class="w-80 h-auto bg-white p-4 lazy-loading"
+                style="border-radius: 24px"
+                src="{{ url_for('static', filename='image/xray-scan.png') }}" 
+                alt="Xray Scan Illustration" 
+                loading="lazy" 
+            >
+            <a 
+                href="https://media.istockphoto.com/id/539215708/vector/chest-x-rays-vector-illustration-medical-imaging-of-lungs.jpg?s=612x612&w=0&k=20&c=NoRYvx08NK1uYbsFBBnoBprU0qaAFItgcoatLJbCcow=" 
+                class="bottom-3 right-2 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                <u>Source</u>
+            </a>
+        </div>
+        <div class="relative">
+            <img 
+                class="w-80 h-auto bg-white p-4 lazy-loading"
+                style="border-radius: 24px"
+                src="{{ url_for('static', filename='image/ct-scan.png') }}" 
+                alt="CT Scan Illustration"
+                loading="lazy"
+            >
+            <a 
+                href="https://my.clevelandclinic.org/health/diagnostics/4808-ct-computed-tomography-scan" 
+                class="bottom-3 right-2 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                <u>Source</u>
+            </a>
+        </div>
+    </div>
+    <div 
+        style="border-radius: 24px; max-width: 1268px;"
+        class="text-gray-700 mx-auto leading-relaxed bg-white p-6 mx-6"
+    >
+        <p>
+            <strong>Physical Examination, X-Rays, Biopsy, and Early CT Scans</strong><br/>
+            In the past, identifying benign (non-cancerous) and malignant (cancerous) tumors was less 
+            accurate and relied mainly on manual exams and basic imaging techniques such as physical examination.
+             Doctors would palpate areas of the body to feel for lumps or abnormal growths. 
+             This method was useful for detecting tumors near the surface but had limitations in identifying 
+             internal tumors or distinguishing between benign and malignant ones.
+        </p>
+    
+        <p class="mt-4">
+            X-rays, introduced in the early 20th century, became one of the first tools for viewing 
+            the inside of the body. They helped doctors spot abnormal growths, especially in bones or 
+            dense tissues. However, X-rays provided only basic images and couldn’t differentiate between benign 
+            and malignant tumors due to the lack of detail in the images.
+        </p>
+    
+        <p class="mt-4">
+            Once a suspicious tumor was identified through a physical exam or X-ray, a biopsy was usually performed. 
+            A biopsy involves removing a tissue sample to examine it under a microscope to determine whether 
+            it is benign or malignant. Although this method was reliable, it often required invasive surgery, 
+            leading to delays in diagnosis.
+        </p>
+    
+        <p class="mt-4">
+            In the 1970s, the invention of computed tomography (CT) scans marked a significant step forward. 
+            CT scans offered cross-sectional images of the body, giving much more detailed information than X-rays.
+            Doctors could better identify tumors, including their size, shape, and location.
+            However, even with CT scans, determining if a tumor was benign or malignant still often required a
+            biopsy or further testing.
+        </p>
+    
+        <p class="mt-4">
+            <strong>Challenges</strong> <br/>
+            Early detection methods for tumors presented several challenges. 
+            One of the major difficulties was distinguishing between benign and malignant tumors. 
+            Older techniques often lacked the ability to make this distinction, 
+            leading to the need for biopsies or surgeries to confirm a diagnosis. 
+            Additionally, early imaging technologies like X-rays and initial CT scans did not provide the 
+            detailed images that modern equipment now offers. This lack of clarity made it harder to detect
+            small or internal tumors and accurately assess their characteristics. 
+            Furthermore, many diagnostic procedures, such as biopsies, involved invasive surgeries, 
+            which could be both painful and time-consuming for patients.
+        </p>
+    </div>
+</section>

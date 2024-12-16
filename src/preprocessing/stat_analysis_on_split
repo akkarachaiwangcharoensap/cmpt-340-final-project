@@ -1,0 +1,4 @@
+split_to,total_slices,percentage
+test_data,2861,19.498398418864582%
+train_data,8929,60.85326790704014%
+validation_data,2883,19.648333674095277%

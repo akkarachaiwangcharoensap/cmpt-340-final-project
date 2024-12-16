@@ -1,0 +1,81 @@
+<section class="bg-white pb-12 px-8 fade-in">
+    <h1 class="text-2xl font-bold text-center pt-10">
+        What are Benign and Malignant Tumors (Nodules)?
+    </h1>
+
+    <div class="grid grid-cols-2 gap-2 mt-10">
+        <div class="block ml-auto pr-6 lg:pr-8 flex flex-col items-end">
+            <div class="relative">
+                <img
+                    class="w-10/12 h-auto my-4 float-right lazy-loading"
+                    style="max-height: 360px; border-radius: 24px"
+                    src="{{ url_for('static', filename='image/benign-vs-malignant.webp') }}" 
+                    alt="Benign and Malignant Tumor Diagram"
+                    loading="lazy"
+                >
+                <a 
+                    href="https://www.technologynetworks.com/cancer-research/articles/benign-vs-malignant-tumors-364765" 
+                    class="bottom-6 right-4 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                    <u>Source</u>
+                </a>
+            </div>
+            
+            <div class="relative">
+                <img 
+                    class="w-10/12 h-auto my-4 float-right lazy-loading"
+                    style="max-height: 360px; border-radius: 24px"
+                    src="{{ url_for('static', filename='image/causes-of-multiple-lung-nodules.png') }}" 
+                    alt="Causes of Multiple Lung Nodules"
+                    loading="lazy"
+                >
+                <a 
+                    href="https://www.verywellhealth.com/multiple-lung-nodules-causes-and-diagnosis-2249390" 
+                    class="-bottom-1 -right-1 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                    <u>Source</u>
+                </a>
+            </div>
+        </div>
+        <div class="pl-2 py-3 mr-8" style="max-width: 624px;">
+            <p>
+                <strong>Benign tumors</strong>
+                are non-cancerous growths made up of abnormal cells that multiply more
+                than normal cells but do not spread to other parts of the body.
+                These tumors typically grow slowly, have well-defined borders,
+                and do not invade nearby tissues or metastasize to distant areas.
+                Although benign tumors are usually harmless, they can cause complications
+                if they grow large enough to press on surrounding tissues or organs,
+                leading to symptoms such as pain or discomfort, depending on their location.
+                Common examples of benign tumors include adenomas, lipomas, and fibromas [1].
+            </p>
+
+            <p class="mt-4">
+                <strong>Malignant tumors</strong>
+                are cancerous and can invade surrounding tissues and spread to distant
+                parts of the body through the bloodstream or lymphatic system,
+                a process called metastasis [2]. Malignant tumors tend to grow more aggressively,
+                and their uncontrolled growth makes them more dangerous and life-threatening.
+                These tumors often require treatments such as surgery, chemotherapy, radiation,
+                or other therapies to prevent further spread and manage symptoms.
+                Carcinomas and sarcomas are examples of malignant tumors [2].
+            </p>
+
+            <p class="mt-4">
+                The key differences between benign and malignant tumors include their growth rate,
+                borders, ability to spread, and overall risk. Benign tumors grow slowly and remain localized,
+                while malignant tumors grow rapidly and invade nearby tissues.
+                Benign tumors have well-defined borders, whereas malignant tumors
+                often have irregular shapes and infiltrate surrounding
+                tissue. Additionally, benign tumors do not spread, while malignant tumors can metastasize.
+                Benign tumors are generally not life-threatening unless they impact critical organs, while
+                malignant tumors pose a greater risk due to their aggressive nature and potential to cause organ failure [3].
+            </p>
+
+            <p class="mt-4">
+                In summary,
+                although both types of tumors involve abnormal cell growth, the major distinction lies in their
+                behavior and potential harm. Benign tumors are non-cancerous and usually less risky, while malignant tumors
+                pose significant health risks due to their aggressive and invasive characteristics.
+            </p>
+        </div>
+    </div>
+</section>

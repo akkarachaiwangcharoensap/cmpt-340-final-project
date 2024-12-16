@@ -1,0 +1,5 @@
+1 - Benign: The nodule is assessed to be benign with a very low probability of malignancy.
+2 - Probably Benign: The nodule is assessed to be probably benign with low risk of malignancy, but some uncertainty remains.
+3 - Indeterminate: The nodule’s malignancy potential is uncertain; it could be either benign or malignant.
+4 - Probably Malignant: The nodule is likely to be malignant with a high probability, though not certain.
+5 - Malignant: The nodule is highly suspected to be malignant with near certainty of being cancerous.

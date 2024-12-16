@@ -1,0 +1,93 @@
+<section class="bg-white pb-12 px-8 fade-in">
+    <h1 class="text-2xl font-bold text-center pt-10">
+        Computational Biology: <br/>
+        Machine Learning (ML) and Computer Vision (CV)
+    </h1>
+
+    <div class="grid grid-cols-2 gap-2 mt-10">
+        <div class="block ml-auto pr-6 lg:pr-8 flex flex-col items-end">
+            <div class="relative">
+                <img
+                    class="w-10/12 h-auto my-4 float-right lazy-loading"
+                    style="max-height: 360px;"
+                    src="{{ url_for('static', filename='image/ml-cv-model-pipeline-illustration.webp') }}" 
+                    alt="ML/CV Model Pipeline Illustration"
+                    loading="lazy"  
+                >
+                <a 
+                    href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-022-30841-3/MediaObjects/41467_2022_30841_Fig1_HTML.png?as=webp" 
+                    class="bottom-0 -right-1 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                    <u>Source</u>
+                </a>
+            </div>
+            
+            <div class="flex w-10/12 justify-between my-4">
+                <div class="relative w-[48%] h-auto">
+                    <img 
+                        style="max-height: 360px;"
+                        src="{{ url_for('static', filename='image/benign-malignant-detection.jpg') }}" 
+                        alt="First Benign and Malignant Detection Illustration"
+                        loading="lazy" 
+                        class="lazy-loading"
+                    >
+                    <a 
+                        href="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/058f/10611755/431b8f7dcdf8/43856_2023_388_Fig5_HTML.jpg" 
+                        class="bottom-14 -right-2 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                        <u>Source</u>
+                    </a>
+                </div>
+                
+                <div class="relative w-[48%] h-auto">
+                    <img 
+                        style="max-height: 360px;"
+                        src="{{ url_for('static', filename='image/benign-malignant-detection-2.webp') }}" 
+                        alt="Second Benign and Malignant Detection Illustration"
+                        loading="lazy" 
+                        class="lazy-loading"
+                    >
+                    <a 
+                        href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-30841-3/MediaObjects/41467_2022_30841_Fig3_HTML.png?as=webp" 
+                        class="-bottom-6 -right-2 text-sm absolute px-1 bg-white rounded text-gray-400 hover:text-gray-500">
+                        <u>Source</u>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pl-2 py-3 mr-8" style="max-width: 624px;">
+            <p>
+                Traditional methods for detecting tumors, such as physical exams, X-rays, biopsies, 
+                and CT scans, rely heavily on human interpretation, which can be time-consuming and may 
+                be less accurate. In contrast, machine learning (ML) and computer vision provide a more advanced 
+                and automated approach to detecting and classifying tumors, whether benign (non-cancerous) 
+                or malignant (cancerous).
+            </p>
+        
+            <p class="mt-4">
+                Machine learning algorithms are designed to learn from large datasets of medical images, such as MRI 
+                or CT scans, where the images are labeled to indicate whether a tumor is benign or malignant. 
+                Over time, these algorithms become highly efficient at identifying patterns in new images, 
+                enabling them to classify tumors automatically without the need for human analysis. 
+                Meanwhile, computer vision enables machines to interpret visual data, assisting in tasks like 
+                identifying the exact location and boundaries of a tumor in an image. 
+                This is crucial because tumors often have complex shapes and textures that can be difficult 
+                for the human eye to detect accurately.
+            </p>
+        
+            <p class="mt-4">
+                The key benefits of these technologies include improved accuracy, as machine learning models 
+                can detect subtle differences between tumors that humans might overlook, leading to more precise
+                diagnoses. They also offer increased speed, processing thousands of images quickly, which allows 
+                for faster results compared to manual methods. Furthermore, these systems provide consistent results. 
+                Perhaps most importantly, they enable early detection, capable of identifying even small or early-stage 
+                tumors that may not be visible through traditional methods.
+            </p>
+        
+            <p class="mt-4">
+                By incorporating these technologies, doctors can now detect tumors more reliably and at earlier stages. 
+                These technologies present a powerful alternative to manual methods, offering a faster, more accurate, 
+                and more efficient way to classify tumors. As these tools continue to advance, they are likely to 
+                become essential in improving cancer diagnosis and treatment outcomes.
+            </p>
+        </div>
+    </div>
+</section>

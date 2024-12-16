@@ -1,0 +1,53 @@
+<!-- Overview Section -->
+<section class="container mx-auto pb-12 fade-in">
+    <h1 
+        class="text-4xl font-bold text-gray-800 mb-8 mt-4 mx-auto"
+        style="max-width: 1268px;"
+    >
+        Overview
+    </h1>
+    <div class="flex flex-col md:flex-row items-center md:items-start justify-center px-4 mx-auto">
+        <!-- Left: Lung Image -->
+        <div class="flex-shrink-0 mb-8 md:mb-0 ml-12 mr-12">
+            <div class="relative">
+                <img src="{{ url_for('static', filename='image/ai-lung-with-tumor.png') }}" 
+                    alt="Lung with Tumor" 
+                    class="w-96 h-auto lazy-loading"
+                    loading="lazy"
+                >
+                <div class="block absolute top-24 -right-16 py-1 bg-white rounded-full flex items-center">
+                    <div class="bg-gray-100 relative w-8 h-8 flex items-center justify-center rounded-full ml-2">
+                        <span class="text-sm fa-solid fa-magnifying-glass"></span>
+                        <div class="bg-teal-500 absolute w-4 h-4 -right-1 -top-0.5 flex items-center justify-center rounded-full">
+                            <span class="fa-solid fa-check text-xs text-white"></span>
+                        </div>
+                    </div>
+                    <span class="inline-block text-center text-sm font-semibold text-gray-600 py-1 px-4">
+                        Nodules Detected
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right: Description -->
+        <div 
+            class="bg-white px-8 pt-4 ml-16 md:ml-16" 
+            style="border-radius: 24px; max-width: 768px;"
+        >
+            <h2 class="text-3xl font-bold mb-4 mt-4">Lung Nodules Detector</h2>
+            <p class="mb-4">
+                Introducing a machine learning (ML) model designed to detect tumors in CT scans! This model is trained to analyze CT images and identify abnormal growths with high accuracy, helping
+                radiologists and doctors spot potential tumors earlier.
+            </p>
+            <p class="mb-4">
+                The model works by learning patterns from thousands of labeled CT scans, distinguishing healthy tissue from possible tumor areas. With advanced image-processing techniques, it can
+                highlight regions of interest, making it a valuable tool in diagnostic imaging.
+            </p>
+            <div class="flex justify-center mb-6">
+                <a href="/demo" class="inline-block px-6 py-3 text-white bg-blue-600 rounded-full hover:bg-blue-700">
+                    Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

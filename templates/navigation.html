@@ -1,0 +1,28 @@
+<nav class="flex items-center justify-between px-8 py-4 mt-2 ml-4">
+    <!-- Left-aligned text -->
+    <div class="text-lg font-semibold text-gray-800">CMPT 340</div>
+    <!-- Centered navigation links -->
+    <div class="flex space-x-4 ml-6">
+        <a href="/" class="px-4 py-3 text-gray-600 bg-gray-200 rounded-full
+            {% if request.path == '/' %} bg-white {% else %} hover:bg-gray-300 {% endif %} ">
+            Overview
+        </a>
+        <a href="/demo" class="px-4 py-3 text-gray-600 bg-gray-200 rounded-full hover:text-gray-700
+            {% if request.path == '/demo' %} bg-white {% else %} hover:bg-gray-300 {% endif %} ">
+            Demo
+        </a>
+        <a href="/acknowledgement" class="px-4 py-3 text-gray-600 bg-gray-200 rounded-full hover:text-gray-700
+            {% if request.path == '/acknowledgement' %} bg-white {% else %} hover:bg-gray-300 {% endif %} ">
+            Acknowledgement
+        </a>
+        <a 
+            href="https://github.com/sfu-cmpt340/2024_3_project_17" 
+            target="_blank" 
+            class="px-4 py-3 text-gray-600 bg-gray-200 rounded-full hover:text-gray-700">
+            Source Code
+        </a>
+    </div>
+
+    <!-- Placeholder for right alignment -->
+    <div class="w-24"></div>
+</nav>
